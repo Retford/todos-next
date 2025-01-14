@@ -12,7 +12,7 @@ export async function GET(request: Request, { params }: Segmentes) {
 
   if (!todo) {
     return NextResponse.json(
-      { mg: `No existe un todo con ese id: ${id}` },
+      { msg: `No existe un todo con ese id: ${id}` },
       { status: 404 }
     );
   }
@@ -32,7 +32,7 @@ export async function PUT(request: Request, { params }: Segmentes) {
 
   if (!todo) {
     return NextResponse.json(
-      { mg: `No existe un todo con ese id: ${id}` },
+      { msg: `No existe un todo con ese id: ${id}` },
       { status: 404 }
     );
   }
