@@ -1,3 +1,4 @@
+import { CgShoppingCart } from 'react-icons/cg';
 import { CiBellOn, CiChat1, CiMenuBurger, CiSearch } from 'react-icons/ci';
 
 export const TopMenu = () => {
@@ -34,6 +35,10 @@ export const TopMenu = () => {
           </button>
           <button className='flex items-center justify-center w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200'>
             <CiBellOn size={25} />
+          </button>
+          <button className='p-2 flex items-center justify-center h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200'>
+            <span className='text-sm mr-2 text-blue-800 font-bold'>10</span>
+            <CgShoppingCart size={25} />
           </button>
         </div>
       </div>

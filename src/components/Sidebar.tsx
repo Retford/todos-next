@@ -5,9 +5,11 @@ import { SidebarItem } from './SidebarItem';
 import React from 'react';
 import {
   IoCalendarOutline,
+  IoCartOutline,
   IoCheckboxOutline,
   IoListOutline,
 } from 'react-icons/io5';
+import { PiCookieDuotone } from 'react-icons/pi';
 
 interface MenuItems {
   path: string;
@@ -30,6 +32,16 @@ const menuItems: MenuItems[] = [
     path: '/dashboard/server-todos',
     icon: <IoListOutline size={30} />,
     title: 'Server Actions',
+  },
+  {
+    path: '/dashboard/cookies',
+    icon: <PiCookieDuotone size={30} />,
+    title: 'Cookies',
+  },
+  {
+    path: '/dashboard/products',
+    icon: <IoCartOutline size={30} />,
+    title: 'Products',
   },
 ];
 
