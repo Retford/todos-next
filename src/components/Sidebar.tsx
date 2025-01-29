@@ -8,6 +8,7 @@ import {
   IoCartOutline,
   IoCheckboxOutline,
   IoListOutline,
+  IoPersonOutline,
 } from 'react-icons/io5';
 import { PiCookieDuotone } from 'react-icons/pi';
 import { getServerSession } from 'next-auth';
@@ -45,6 +46,11 @@ const menuItems: MenuItems[] = [
     path: '/dashboard/products',
     icon: <IoCartOutline size={30} />,
     title: 'Products',
+  },
+  {
+    path: '/dashboard/profile',
+    icon: <IoPersonOutline size={30} />,
+    title: 'Perfil',
   },
 ];
 
