@@ -9,10 +9,11 @@ export default async function DashboardPage() {
   if (!session) {
     redirect('/api/auth/signin');
   }
+
   return (
     <div className='grid gap-6 grid-cols-1 sm:grid-cols-2'>
       <WidgetItem title='Usuario Conectado SSide'>
-        {JSON.stringify(session.user)}
+        {JSON.stringify(session)}
       </WidgetItem>
     </div>
   );
